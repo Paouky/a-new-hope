@@ -52,16 +52,11 @@ h1,h2 {
 .audio-wrapper p {
     font-size: 1vw;
     color: grey;
-    margin-top: 50px;
-    opacity: 0;
+    margin-top: 60px;
 }
-.audio-wrapper p::after {
-    opacity: 1;
-}
-
 audio {
     z-index: 10;
-    border: 1px solid white;
+    border: 0.75px solid rgb(200, 200, 200, 0.2);
     margin-top: 20px;
     position: fixed;
     top: 0;
