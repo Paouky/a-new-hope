@@ -6,7 +6,7 @@ body {
   overflow: hidden;
   font-family: 'Roboto';
   /* push down the the wrapper by half (now 90%) the page */
-  margin: 90% 0 0 0;
+  margin: 90% 0 10% 0;
   position: relative;
 }
 body::after {
@@ -34,12 +34,40 @@ body::after {
   font-weight: bold;
   text-align: justify;
   position: relative;
-  animation: scroll 200s linear forwards;
+  animation: scroll 180s linear forwards;
   animation-delay: 3s;
 }
 h1,h2 {
   text-align: center;
 }
+.audio-wrapper {
+    z-index: 9;
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.audio-wrapper p {
+    font-size: 1vw;
+    color: grey;
+    margin-top: 50px;
+    opacity: 0;
+}
+.audio-wrapper p::after {
+    opacity: 1;
+}
+
+audio {
+    z-index: 10;
+    border: 1px solid white;
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    width: 100px;
+}
+
 
 @keyframes scroll {
 	from { top: 0; transform: translateZ(0) rotateX(20deg); }
