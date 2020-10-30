@@ -21,7 +21,7 @@ body::after {
 .wrapper {
   display: flex;
   height: 100%;
-  width: 95%;
+  width: 85%;
   margin: 0 auto;
   /* perspective gives us a 3d space within the element to work with*/
   /* perspective also has the effect of pushing the content "down" */
