@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 
 body {
-  letter-spacing: 4px;
   background: rgb(20,20,20);
   overflow: hidden;
   font-family: 'Roboto';
+  letter-spacing: 3px;
   /* push down the the wrapper by half (now 90%) the page */
-  margin: 90% 0 10% 0;
+  margin: 90% 0 0 0;
   position: relative;
 }
 body::after {
@@ -21,7 +21,7 @@ body::after {
 .wrapper {
   display: flex;
   height: 100%;
-  width: 85%;
+  width: 70%;
   margin: 0 auto;
   /* perspective gives us a 3d space within the element to work with*/
   /* perspective also has the effect of pushing the content "down" */
@@ -35,12 +35,12 @@ body::after {
   text-align: justify;
   position: relative;
   animation: scroll 180s linear forwards;
-  animation-delay: 3s;
+  /*animation-delay: 3s;*/
 }
 h1,h2 {
   text-align: center;
 }
-.audio-wrapper {
+/*.audio-wrapper {
     z-index: 9;
     margin-top: 20px;
     position: fixed;
@@ -61,7 +61,7 @@ audio {
     position: fixed;
     top: 0;
     width: 100px;
-}
+}*/
 
 
 @keyframes scroll {
